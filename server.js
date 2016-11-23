@@ -3,9 +3,8 @@ var exphbs  = require('express-handlebars');
 var path = require('path');
 var fs = require("fs");
 
-var port = process.env.port || 3000;
-
 var app = express();
+app.set('port', (process.env.PORT || 3000));
 
 var js_path= "/dist/js";
 var images_path= "/dist/images";
@@ -293,8 +292,8 @@ app.get('/brown', function (req, res) {
   res.render('index', getContext("brown"));
 });
 
-app.listen(port, function() {
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+app.listen(app.get('port'), function() {
+    console.log('App is running, server is listening on port ', app.get('port'));
 });
 
 function checkInviato(cognome, nome, invitati) {
