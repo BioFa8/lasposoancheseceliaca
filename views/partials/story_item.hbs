@@ -1,0 +1,19 @@
+<!-- Item -->
+<div class="story_item">
+    <div class="story_img parallax" data-image="{{this.image}}">
+      {{#if this.youtube}}
+        <a class="youtube cboxElement" href="{{{this.youtube}}}"><i class="flaticon-play102"></i></a>
+      {{/if}}
+        <div class="story_img_plane"></div>
+    </div>
+    <div class="story_plane">
+        <div class="story_back"></div>
+        <div class="story_txt">
+            <div class="story_title">
+                {{this.title}}
+                <i>{{this.date}}</i>
+            </div>
+            {{this.desc}}
+        </div>
+    </div>
+</div>

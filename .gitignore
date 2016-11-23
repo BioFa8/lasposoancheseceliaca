@@ -1,0 +1,14 @@
+*.pyc
+*.pyo
+*.pyd
+*.o
+*.lo
+*.la
+*~
+*.so
+*.bak
+/.settings
+.DS_Store
+*.log
+node_modules/
+invitati.json
