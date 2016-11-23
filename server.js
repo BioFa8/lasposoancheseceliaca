@@ -296,6 +296,9 @@ app.get('/brown', function (req, res) {
 app.listen(port, function () {
   console.log('Example app listening on port '+port);
 });
+app.listen(port, function() {
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
 
 function checkInviato(cognome, nome, invitati) {
     var i, len = invitati.length;
