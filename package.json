@@ -14,6 +14,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "engines": {
+    "node": "6.2.2",
+    "npm": "4.0.2"
+  },
+  "author": "fabio.norata@gmail.com",
   "license": "ISC"
 }
