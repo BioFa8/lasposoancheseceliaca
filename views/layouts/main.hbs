@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="{{@intl.locales}}">
 
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -93,7 +93,10 @@
         <script src="{{js_path}}/jquery.firefly-0.3-min.js"></script>
         <!-- Theme JS -->
         <script src="{{js_path}}/script.js"></script>
-
+        <script type="">
+          /*CountDown*/
+          $('.married_coundown').countdown({until: new Date({{formatDate wedding_date year="numeric"}},{{formatDate wedding_date month="numeric"}}-1,{{formatDate wedding_date day="numeric"}})});
+        </script>
 
     </div>
 

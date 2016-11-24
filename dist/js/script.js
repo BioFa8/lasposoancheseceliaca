@@ -9,9 +9,9 @@
 			send_form('block_1');
 			return false;
 		});
-		
+
 		function send_form(type){
-		
+
 		var name = $("input#name_"+type).val();
 		if (name == "") {
 			$("input#name_"+type).css({border:"1px solid red"});
@@ -36,17 +36,17 @@
 			$("input#attending_"+type).focus();
 			return false;
 		}
-		
+
 		var dataString = '&name=' + name + '&email=' + email + '&guest=' + guest + '&attending=' + attending;
 		var form = $(this);
-		var str = form.serialize(); 
+		var str = form.serialize();
 		$.ajax({
 			method: "POST",
 			url: "http://formspree.io/your@mail.com",
 			data: dataString,
 			dataType: "json",
 			success: function() {
-			$('#div_'+type).html("<div id='form_send_message'>Thank you for your request, we will contact you as soon as possible.</div>", 1500);	
+			$('#div_'+type).html("<div id='form_send_message'>Thank you for your request, we will contact you as soon as possible.</div>", 1500);
 		}
 		});
 		}
@@ -72,15 +72,15 @@
 			$('header .anim').toggleClass('active');
 			e.preventDefault();
 		});
-		
+
 		/* Section Background */
 		$('section, .parallax').each(function(){
 			var image = $(this).attr('data-image');
 			if (image){
-				$(this).css('background-image', 'url('+image+')');	
+				$(this).css('background-image', 'url('+image+')');
 			}
 		});
-		
+
 		/*ColorBox*/
 		if ($(window).width() >= 760) {
 			$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
@@ -94,7 +94,7 @@
 				$(".youtube").colorbox({iframe:true, innerWidth:320, innerHeight:240});
 			}
 		 });
-		
+
 		/*Scroll Effect*/
 		$('.intro_down, .go').on("click", function(e){
 			var anchor = $(this);
@@ -103,7 +103,7 @@
 			}, 1000);
 			e.preventDefault();
 		});
-		
+
 		/*Show/Hide Photo in When&Where Block*/
 		$('.photocamera span').on("click", function(e){
 			$(this).parents('section').find('.opacity').toggleClass('fade');
@@ -117,20 +117,16 @@
 			e.preventDefault();
 		});
 
-		
-		/*CountDown*/
-		$('.married_coundown').countdown({until: new Date(2016, 12, 19)});
-		
 		/*OWL Carousel in Our Story*/
 		$(".story_wrapper").owlCarousel({
-	 		navigation : true,	responsive: true, responsiveRefreshRate : 200,	slideSpeed : 200,	
+	 		navigation : true,	responsive: true, responsiveRefreshRate : 200,	slideSpeed : 200,
 	 		paginationSpeed : 200,	rewindSpeed : 500,	items:3,  itemsTablet: [768,1], autoPlay : true,
 			itemsMobile : [479,1], 	itemsDesktopSmall : [980,1],  itemsDesktop : [1500,2], mouseDrag:false, touchDrag:false
 		});
 
 		/*Gallery Carousel */
 		$(".gallery_wrapper").owlCarousel({
-	 		navigation : true,	responsive: true, responsiveRefreshRate : 200,	slideSpeed : 200,	
+	 		navigation : true,	responsive: true, responsiveRefreshRate : 200,	slideSpeed : 200,
 	 		paginationSpeed : 200,	rewindSpeed : 500,	items:3,  itemsTablet: [768,2], autoPlay : true,
 			itemsMobile : [479,1], mouseDrag:false, touchDrag:false
 		});
@@ -145,13 +141,13 @@
 		$(".guest_wrapper").owlCarousel({
 	 		navigation : true, responsive: true, responsiveRefreshRate : 200, slideSpeed : 200,	paginationSpeed : 200,
 			rewindSpeed : 500, stopOnHover : true, autoHeight : true, items:4, mouseDrag:false, autoPlay : true, touchDrag:false
-		});	
+		});
 
 		/*Slider Carousel*/
 		$(".slider").owlCarousel({
 	 		navigation : true, responsive: true, responsiveRefreshRate : 200, slideSpeed : 200,	paginationSpeed : 200,
 			rewindSpeed : 500, stopOnHover : false, autoHeight : true, singleItem:true, mouseDrag:false, autoPlay : true, transitionStyle : "fade", touchDrag:false
-		});	
+		});
 
 		/*Blog Inside*/
 		$(".blog_inside_wrapper").owlCarousel({
@@ -167,16 +163,16 @@
 			$('html, body').stop().animate({
 				scrollTop: $(anchor.attr('href')).offset().top +1
 			}, 1000);
-			
+
 			e.preventDefault();
 		});
-		
-		
+
+
 		/*FireFly in Intro*/
 		$.firefly({
 			color: '#fff', minPixel: 1, maxPixel: 3, total : 55, on: '.into_firefly'
 		});
-		
+
 		/* Refresh ScrollR */
 		s.refresh($(".guest_wrapper, .our_story"));
 

@@ -1,10 +1,12 @@
 var express = require('express');
 var exphbs  = require('express-handlebars');
+var HandlebarsIntl = require('handlebars-intl');
 var path = require('path');
 var fs = require("fs");
 
 var app = express();
 app.set('port', (process.env.PORT || 3000));
+app.set('default locale', 'it-IT');
 
 var js_path= "/dist/js";
 var images_path= "/dist/images";
@@ -19,12 +21,13 @@ var hbs = exphbs.create({
   helpers: {
     js_path: js_path,
     images_path: images_path,
-    css_path: css_path,
-    foo: function () { return 'FOO!'; },
-    bar: function () { return 'BAR!'; }
+    css_path: css_path
   },
 
 });
+
+HandlebarsIntl.registerWith(hbs.handlebars);
+app.use(require('./middleware/intl'));
 
 var our_story = function(theme_color) {
   return [
@@ -259,6 +262,8 @@ console.log("Norata Francesco isInvitatoValid="+isInvitatoValid);
 
 function getContext(theme_color) {
   return {
+    intl: {locales: 'it-IT'},
+    wedding_date: new Date(2017,5,10), // Num mese -1
     title: "Elena & Fabio",
     color_theme: theme_color,
     our_story: our_story(theme_color),

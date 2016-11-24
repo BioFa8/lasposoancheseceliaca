@@ -8,6 +8,7 @@
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
     "fs": "^0.0.1-security",
+    "handlebars-intl": "^1.1.2",
     "path": "^0.12.7"
   },
   "devDependencies": {},
