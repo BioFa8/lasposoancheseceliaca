@@ -42,11 +42,11 @@
 		var str = form.serialize();
 		$.ajax({
 			method: "POST",
-			url: "http://formspree.io/your@mail.com",
+			url: "http://formspree.io/fabio.norata@gmail.com",
 			data: dataString,
 			dataType: "json",
 			success: function() {
-			$('#div_'+type).html("<div id='form_send_message'>Thank you for your request, we will contact you as soon as possible.</div>", 1500);
+			$('#div_'+type).html("<div id='form_send_message'>Grazie per averci risposto, ti ricontatteremo il più presto possibile.</div>", 1500);
 		}
 		});
 		}
@@ -140,7 +140,7 @@
 		/*The Crew Carousel*/
 		$(".guest_wrapper").owlCarousel({
 	 		navigation : true, responsive: true, responsiveRefreshRate : 200, slideSpeed : 200,	paginationSpeed : 200,
-			rewindSpeed : 500, stopOnHover : true, autoHeight : true, items:4, mouseDrag:false, autoPlay : true, touchDrag:false
+			rewindSpeed : 500, stopOnHover : false, autoHeight : true, items:4, mouseDrag:false, autoPlay : true, transitionStyle : "fade", touchDrag:false
 		});
 
 		/*Slider Carousel*/

@@ -32,125 +32,96 @@ app.use(require('./middleware/intl'));
 var our_story = function(theme_color) {
   return [
     {
-      date: "03.12.2013",
+      date: "02.04.2014",
       image: images_path+"/"+theme_color+"/port2.jpg",
-      title:"The day we met",
+      title:"Il giorno che ci incontrammo",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
     },
     {
-      date: "03.01.2014",
+      date: "15.11.2014",
       image: images_path+"/"+theme_color+"/port3.jpg",
       youtube: "http://www.youtube.com/embed/hEowkXOP_Wg?rel=0",
-      title:"Our first holiday",
+      title:"La nostra prima partita",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
     },
     {
-      date: "12.05.2014",
+      date: "01.01.2015",
       image: images_path+"/"+theme_color+"/port1.jpg",
-      title:"First dinner together",
+      title:"Finalmente outing",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
     },
     {
-      date: "24.08.2014",
+      date: "12.08.2016",
       image: images_path+"/"+theme_color+"/port4.jpg",
-      title:"The Proposal",
+      title:"Il nostro primo vero viaggio",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
     },
     {
-      date: "10.01.2015",
+      date: "05.11.2016",
       image: images_path+"/"+theme_color+"/port5.jpg",
-      title:"Here comes the baby",
+      title:"La proposta",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
     },
+    /*
     {
       date: "03.02.2015",
       image: images_path+"/"+theme_color+"/port6.jpg",
       title:"Bridesmaids",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-    },
+    },*/
   ];
 };
+
 var guests = [
   {
     image: {
       src: images_path+"/br1.jpg",
-      alt: "Best Man"
+      alt: "Kame"
     },
-    title: "<span>Best Man</span> Maxx Frazer",
-    nickname: "Best Haircut"
+    title: "<span>Testimone Sposo</span> Daniele",
+    nickname: "Kame"
   },
   {
     image: {
       src: images_path+"/br2.jpg",
-      alt: "Maid Of Honor"
+      alt: "Query"
     },
-    title: "<span>Maid of Honor</span> Alina Gilman",
-    nickname: "Made in Georgia"
-  },
-  {
-    image: {
-      src: images_path+"/br3.jpg",
-      alt: "James"
-    },
-    title: "<span>Groomsman</span> James Petersen",
-    nickname: "MNTN"
-  },
-  {
-    image: {
-      src: images_path+"/br4.jpg",
-      alt: "Justin"
-    },
-    title: "<span>Groomsman</span> Justin Allen",
-    nickname: "Hello Brooklyn"
+    title: "<span>Testimone Sposa</span> Fabiana",
+    nickname: "Query"
   },
   {
     image: {
       src: images_path+"/br5.jpg",
-      alt: "Suesen"
+      alt: "Fede"
     },
-    title: "<span>Bridesmaid</span> Suisen Cram<",
-    nickname: "Yes, I’m from Iowa"
+    title: "<span>Testimone Sposa</span> Federica",
+    nickname: "Sorellona"
+  },
+  {
+    image: {
+      src: images_path+"/br3.jpg",
+      alt: "Giannone"
+    },
+    title: "<span>Testimone Sposo</span> Giovanni",
+    nickname: "Giannone"
+  },
+  {
+    image: {
+      src: images_path+"/br4.jpg",
+      alt: "CoCamion"
+    },
+    title: "<span>Testimone Sposo</span> Renato",
+    nickname: "CoCamion"
   },
   {
     image: {
       src: images_path+"/br6.jpg",
-      alt: "Kate"
+      alt: "Saruz"
     },
-    title: "<span>Bridesmaid</span> Kate Gaffney",
-    nickname: "O-H-I-O"
+    title: "<span>Testimone Sposa</span> Sara",
+    nickname: "Saruz"
   },
-  {
-    image: {
-      src: images_path+"/br7.jpg",
-      alt: "Nick"
-    },
-    title: "<span>Groomsman</span> Nick Barker",
-    nickname: "Jimmy Nickles"
-  },
-  {
-    image: {
-      src: images_path+"/br8.jpg",
-      alt: "Nate"
-    },
-    title: "<span>Groomsman</span> Nate Lourenco",
-    nickname: "Ivan Drago"
-  },
-  {
-    image: {
-      src: images_path+"/br9.jpg",
-      alt: "Madison"
-    },
-    title: "<span>Bridesmaid</span> Madison Le",
-    nickname: "Whose Garden?"
-  },
-  {
-    image: {
-      src: images_path+"/br10.jpg",
-      alt: "Lydia"
-    },
-    title: "<span>Bridesmaid</span> Lydia Cram",
-    nickname: "Sister. Sister"
-  },
+  
 ];
 
 var events = function(theme_color) {
@@ -158,20 +129,20 @@ var events = function(theme_color) {
     {
       date: "03.12.2013",
       image: images_path+"/"+theme_color+"/port7.jpg",
-      title:"The day we met",
+      title:"Colosseo",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
     },
     {
       date: "03.01.2014",
       image: images_path+"/"+theme_color+"/port8.jpg",
       youtube: "http://www.youtube.com/embed/hEowkXOP_Wg?rel=0",
-      title:"Our first holiday",
+      title:"Fori Imperiali",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
     },
     {
       date: "12.05.2014",
       image: images_path+"/"+theme_color+"/port9.jpg",
-      title:"First dinner together",
+      title:"Altare della Patria",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
     },
     {
