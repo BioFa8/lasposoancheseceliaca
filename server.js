@@ -4,7 +4,19 @@ var HandlebarsIntl = require('handlebars-intl');
 var path = require('path');
 var fs = require("fs");
 
+//Authentication module.
+var auth = require('http-auth');
+var basic = auth.basic({
+    realm: "Private area",
+    file: __dirname + "/.htpasswd",
+});
+var digest = auth.digest({
+    realm: "Private area",
+    file: __dirname + "/.htpasswd"
+});
+
 var app = express();
+app.use(auth.connect(digest));
 app.set('port', (process.env.PORT || 3000));
 app.set('default locale', 'it-IT');
 
