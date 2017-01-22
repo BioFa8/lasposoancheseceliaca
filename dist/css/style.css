@@ -1251,32 +1251,36 @@ header {
 			position:relative;
 			height:40px!important
 		}
-			.txt_input {
-				width:49%;
-				padding:0;
-				display:inline-block;
-				margin:0 0 10px 0;
-				position:relative
-			}
-				.txt_input:before {
-					position:absolute;
-					display:block;
-					content:"";
-					width:1px;
-					background:#595959;
-					height:5px;
-					bottom:0
-				}
-				.txt_input:after {
-					position:absolute;
-					display:block;
-					content:"";
-					width:1px;
-					background:#595959;
-					height:5px;
-					bottom:0;
-					right:0
-				}
+		.txt_input {
+			width:49%;
+			padding:0;
+			display:inline-block;
+			margin:0 0 10px 0;
+			position:relative
+		}
+		.txt_input:before {
+			position:absolute;
+			display:block;
+			content:"";
+			width:1px;
+			background:#595959;
+			height:5px;
+			bottom:0
+		}
+		.txt_input:after {
+			position:absolute;
+			display:block;
+			content:"";
+			width:1px;
+			background:#595959;
+			height:5px;
+			bottom:0;
+			right:0
+		}
+		#rsvp textarea.form-control  {
+           resize: none;
+           /*height: 50px!important;*/
+        }
 		.wpcf7-mail-sent-ok  {
 			margin: 5px 0 0!important
 		}

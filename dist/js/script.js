@@ -11,44 +11,61 @@
 		});
 
 		function send_form(type){
-
-		var name = $("input#name_"+type).val();
-		if (name == "") {
-			$("input#name_"+type).css({border:"1px solid red"});
-			$("input#name_"+type).focus();
-			return false;
-		}
-		var email = $("input#email_"+type).val();
-		if (email == "") {
-			$("input#email_"+type).css({border:"1px solid red"});
-			$("input#email_"+type).focus();
-			return false;
-		}
-		var guest = $("input#guest_"+type).val();
-		if (guest == "") {
-			$("input#guest_"+type).css({border:"1px solid red"});
-			$("input#guest_"+type).focus();
-			return false;
-		}
-		var attending = $("input#attending_"+type).val();
-		if (attending == "") {
-			$("input#attending_"+type).css({border:"1px solid red"});
-			$("input#attending_"+type).focus();
-			return false;
-		}
-
-		var dataString = '&name=' + name + '&email=' + email + '&guest=' + guest + '&attending=' + attending;
-		var form = $(this);
-		var str = form.serialize();
-		$.ajax({
-			method: "POST",
-			url: "http://formspree.io/fabio.norata@gmail.com",
-			data: dataString,
-			dataType: "json",
-			success: function() {
-			$('#div_'+type).html("<div id='form_send_message'>Grazie per averci risposto, ti ricontatteremo il più presto possibile.</div>", 1500);
-		}
-		});
+	
+			var name = $("input#name_"+type).val();
+			if (name == "") {
+				$("input#name_"+type).css({border:"1px solid red"});
+				$("input#name_"+type).focus();
+				return false;
+			}
+			var email = $("input#email_"+type).val();
+			if (email == "") {
+				$("input#email_"+type).css({border:"1px solid red"});
+				$("input#email_"+type).focus();
+				return false;
+			}
+			
+			var surname = $("input#surname_"+type).val();
+			if (surname == "") {
+				$("input#surname_"+type).css({border:"1px solid red"});
+				$("input#surname_"+type).focus();
+				return false;
+			}
+			
+			var attending = $("input#attending_"+type).val();
+			if (attending == "") {
+				$("input#attending_"+type).css({border:"1px solid red"});
+				$("input#attending_"+type).focus();
+				return false;
+			}
+			
+			$.post( "/checkinvitato", { name: name, surname: surname })
+			  .done(function( data ) {
+			   console.log(data);
+			   var isInvitatoValid = data;
+				console.log(surname +" "+ name+ " isInvitatoValid?"+isInvitatoValid);
+				if (!isInvitatoValid) {
+					$("input#surname_"+type).css({border:"1px solid red"});
+					$("input#name_"+type).css({border:"1px solid red"});
+					$("input#name_"+type).focus();
+					return false;
+				}
+			  });	
+			
+			//return false;
+	
+			var dataString = '&name=' + name + '&surname=' + surname + '&attending=' + attending + '&email=' + email;
+			var form = $(this);
+			var str = form.serialize();
+			$.ajax({
+				method: "POST",
+				url: "http://formspree.io/info@lasposoancheseceliaca.com",
+				data: dataString,
+				dataType: "json",
+				success: function() {
+					$('#div_'+type).html("<div id='form_send_message'>Grazie per averci risposto, ti ricontatteremo il più presto possibile.</div>", 1500);
+				}
+			});
 		}
 
 		/*ScrollR */
