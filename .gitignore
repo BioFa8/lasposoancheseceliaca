@@ -11,5 +11,4 @@
 .DS_Store
 *.log
 node_modules/
-invitati.json
 .project
