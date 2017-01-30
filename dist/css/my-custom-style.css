@@ -1,0 +1,125 @@
+body {
+	background-image:url(../images/my-custom-style/main_back.jpg);
+}
+h2 {
+	color:#f0a080;
+}
+h2:after {
+	background: url(../images/my-custom-style/bullet.png);
+	background-size: cover;
+}
+.bullet {
+	background: url(../images/my-custom-style/bullet.png);
+	background-size: cover;
+}
+.im_arrows:before {
+	background: url(../images/my-custom-style/im_arrow_end.png);
+	background-size: cover;
+}
+.im_arrows:after {
+	background: url(../images/my-custom-style/im_arrow_start.png);
+	background-size: cover;
+}
+.im_arrows {
+    display: none;
+}
+
+.btn {
+	color:#d9c6b1!important;
+	border: 2px solid #d9c6b1
+	
+}
+	.btn:hover {
+		background:#e77f66;
+		color:#fff!important
+	}
+	.btn:active, .btn:focus {
+		background:#e77f66;
+	}
+.married_coundown {
+	color: #e77f66;
+}
+.double_arrow {
+	background: url(../images/my-custom-style/double_arrow.png);
+	background-size: cover;
+	height: 73px;
+    margin: 25px auto;
+    width: 45px;
+}
+
+.owl-pagination {
+	background: url(../images/my-custom-style/arrow_back.png) repeat-x;
+	background-size: cover
+}
+.owl-pagination:before {
+	background: url(../images/my-custom-style/arrow_end.png);
+	background-size: cover;
+}
+.owl-pagination:after {
+	background: url(../images/my-custom-style/arrow_start.png);
+	background-size: cover;
+}
+.owl-page:after {
+	background: url(../images/my-custom-style/bullet.png);
+	background-size: cover
+}
+.owl-page.active:after {
+	background: url(../images/my-custom-style/bullet_active.png);
+	background-size: cover
+}
+
+.story_title, .story_title i {
+	color: #f0a080;
+}
+.story_title:before, .story_title:after {
+	background:none;
+}
+
+.when_where .over{
+	background:rgba(89,89,89,0.83);
+}
+.footer .over {
+	background:rgba(89,89,89,0.43);
+}
+.paper {
+	background:url(../images/my-custom-style/paper.jpg);
+}
+.envelope_back {
+	background:url(../images/my-custom-style/env_back.jpg);
+}
+.env_top {
+	background: url(../images/my-custom-style/env_top.png);
+}
+.env_top_top {
+	background: url(../images/my-custom-style/env_top_top.png);
+}
+.envelope_front {
+	background:url(../images/my-custom-style/envelope_front.png);
+}
+.paper .paper_title {
+	color: #e77f66;
+	margin: 10px 0 11px;
+}
+b, strong {
+    font-weight: bold !important;
+}
+.btn {
+    border-radius:50px;
+    border: 2px solid #f08980;
+    color: #f08980 !important;
+}
+.married_coundown .countdown-amount {
+    color: #f08980;
+}
+.married_coundown .countdown-period {
+    color: #717171;
+}
+.title2 {
+    font:45px/60px Raleway, Roboto Condensed;
+}
+.when_where_container .title3 {
+    width: 303px;
+}
+.when_where_container .title1 {
+    font: 28px/48px Vanilla Daisy Pro,Great Vibes;
+}

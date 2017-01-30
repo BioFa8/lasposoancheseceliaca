@@ -182,6 +182,8 @@
 			}, 1000);
 
 			e.preventDefault();
+			
+			$('.main_menu_btn').click();
 		});
 
 

@@ -64,7 +64,7 @@ function getContext(theme_color) {
   return {
     intl: {locales: 'it-IT'},
     wedding_date: new Date(2017,5,10), // Num mese -1
-    title: "Elena & Fabio",
+    title: "Fabio & Elena",
     color_theme: theme_color,
     our_story: dati.our_story(theme_color),
     guests: dati.guests,
@@ -78,7 +78,7 @@ app.set('view engine', '.hbs');
 app.use("/dist", express.static(path.join(__dirname, 'dist')));
 
 app.get('/', function (req, res) {
-    res.render('index', getContext("brown"));
+    res.render('index', getContext("my-custom-style"));
 });
 
 app.get('/blue', function (req, res) {
