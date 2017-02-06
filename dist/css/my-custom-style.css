@@ -123,3 +123,15 @@ b, strong {
 .when_where_container .title1 {
     font: 28px/48px Vanilla Daisy Pro,Great Vibes;
 }
+.owl-prev::before, .owl-prev::after, .owl-next::before, .owl-next::after {
+    height: 50px;
+}
+.owl-prev::after, .owl-next::after {
+    top: 43px;
+}
+.gallery_txt a::before, .gallery_txt a::after {
+    width:0px;
+}
+.story_img_plane::after {
+    background: none;
+}

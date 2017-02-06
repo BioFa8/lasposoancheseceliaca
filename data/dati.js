@@ -9,7 +9,7 @@ var our_story = function(theme_color) {
     {
       date: "15.11.2014",
       image: global.images_path+"/"+theme_color+"/port3.jpg",
-      youtube: "http://www.youtube.com/embed/hEowkXOP_Wg?rel=0",
+      youtube: "https://www.youtube.com/embed/5Z9xoHf5eQc?rel=0",
       title:"La nostra prima partita",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
     },

@@ -963,7 +963,7 @@ header {
 			position:absolute;
 			display:block;
 			content:"";
-			width:1px;
+			/*width:1px;*/
 			height:15px;
 			background:#fff;
 			transform:skew(-17deg,0);
@@ -973,7 +973,7 @@ header {
 			position:absolute;
 			display:block;
 			content:"";
-			width:1px;
+			/*width:1px;*/
 			height:15px;
 			background:#fff;
 			transform:skew(-17deg,0);
