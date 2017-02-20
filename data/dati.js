@@ -4,32 +4,32 @@ var our_story = function(theme_color) {
       date: "02.04.2014",
       image: global.images_path+"/"+theme_color+"/port2.jpg",
       title:"Il giorno che ci incontrammo",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+      desc: "Non ci sono foto a testimonianza di questo giorno, però ci sono delle persone, fatevelo raccontare da loro. Se volete scriveteci, vi mandiamo un messaggio in privato ^_^"
     },
     {
       date: "15.11.2014",
       image: global.images_path+"/"+theme_color+"/port3.jpg",
       youtube: "https://www.youtube.com/embed/5Z9xoHf5eQc?rel=0",
       title:"La nostra prima partita",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+      desc: "Cosa regalare per il primo compleanno assieme? Direi una bella partita degli All Blacks VS Scozia nella magnifica Edimburgo. Birra, patatine con cheddar appiccicoso e un sacco di freddo XD"
     },
     {
       date: "01.01.2015",
       image: global.images_path+"/"+theme_color+"/port1.jpg",
       title:"Finalmente outing",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+      desc: "Vabbè l’abbiamo tenuto un pò segreto per gustarci i primi mesi, è stato un gioco ignorarci in compagnia dei colleghi, però alla fine abbiamo fatto outing."
     },
     {
       date: "12.08.2016",
       image: global.images_path+"/"+theme_color+"/port4.jpg",
       title:"Il nostro primo vero viaggio",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+      desc: "Irlanda on the road. La strada segue il paesaggio, le pecore attraversano indisturbate, il verde regna sovrano, il vento imperversa sulle scogliere... salire una piccola stradina, simile alla terra di Mordor, e trovare al di là della montagna una valle inondata dalla luce del tramonto."
     },
     {
       date: "05.11.2016",
       image: global.images_path+"/"+theme_color+"/port5.jpg",
       title:"La proposta",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+      desc: "Oh Romeo, Romeo,  perché sei tu Romeo? Montecchi e Capuleti…eh no, Norata e Pisano. La bella Verona ha fatto da contorno ad una fantastica proposta."
     },
     /*
     {
@@ -101,7 +101,7 @@ var events = function(theme_color) {
       image: global.images_path+"/luna-colosseo.jpg",
       youtube: "https://www.youtube.com/embed/O6D9YA2ZHjE?rel=0",
       title:"Colosseo",
-      desc: "Il Colosseo è il più grande anfiteatro del mondo, situato nel centro della città di Roma. In grado di contenere un numero di spettatori stimato tra 50.000 e 75.000 unità, è il più importante anfiteatro romano, nonché il più imponente monumento della Roma antica che sia giunto fino a noi, conosciuto in tutto il mondo come simbolo della città di Roma e uno dei simboli d'Italia."
+      desc: "Il Colosseo è il più grande anfiteatro del mondo, situato nel centro della città di Roma. E' il più importante anfiteatro romano, nonché il più imponente monumento della Roma antica che sia giunto fino a noi, conosciuto in tutto il mondo come simbolo della città di Roma e uno dei simboli d'Italia."
     },
     {
       image: global.images_path+"/fori-imperiali.jpg",
