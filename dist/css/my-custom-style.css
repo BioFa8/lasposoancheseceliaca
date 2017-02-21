@@ -135,3 +135,7 @@ b, strong {
 .story_img_plane::after {
     background: none;
 }
+.guests .container {
+    width: 100%;
+    max-width: none;
+}

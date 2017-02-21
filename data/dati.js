@@ -2,42 +2,35 @@ var our_story = function(theme_color) {
   return [
     {
       date: "02.04.2014",
-      image: global.images_path+"/"+theme_color+"/port2.jpg",
+      image: global.images_path+"/"+theme_color+"/first_day.jpg",
       title:"Il giorno che ci incontrammo",
       desc: "Non ci sono foto a testimonianza di questo giorno, però ci sono delle persone, fatevelo raccontare da loro. Se volete scriveteci, vi mandiamo un messaggio in privato ^_^"
     },
     {
       date: "15.11.2014",
-      image: global.images_path+"/"+theme_color+"/port3.jpg",
+      image: global.images_path+"/"+theme_color+"/sco_nz.jpg",
       youtube: "https://www.youtube.com/embed/5Z9xoHf5eQc?rel=0",
       title:"La nostra prima partita",
       desc: "Cosa regalare per il primo compleanno assieme? Direi una bella partita degli All Blacks VS Scozia nella magnifica Edimburgo. Birra, patatine con cheddar appiccicoso e un sacco di freddo XD"
     },
     {
       date: "01.01.2015",
-      image: global.images_path+"/"+theme_color+"/port1.jpg",
+      image: global.images_path+"/"+theme_color+"/outing.jpg",
       title:"Finalmente outing",
       desc: "Vabbè l’abbiamo tenuto un pò segreto per gustarci i primi mesi, è stato un gioco ignorarci in compagnia dei colleghi, però alla fine abbiamo fatto outing."
     },
     {
       date: "12.08.2016",
-      image: global.images_path+"/"+theme_color+"/port4.jpg",
+      image: global.images_path+"/"+theme_color+"/ireland.jpg",
       title:"Il nostro primo vero viaggio",
       desc: "Irlanda on the road. La strada segue il paesaggio, le pecore attraversano indisturbate, il verde regna sovrano, il vento imperversa sulle scogliere... salire una piccola stradina, simile alla terra di Mordor, e trovare al di là della montagna una valle inondata dalla luce del tramonto."
     },
     {
       date: "05.11.2016",
-      image: global.images_path+"/"+theme_color+"/port5.jpg",
+      image: global.images_path+"/"+theme_color+"/verona.jpg",
       title:"La proposta",
       desc: "Oh Romeo, Romeo,  perché sei tu Romeo? Montecchi e Capuleti…eh no, Norata e Pisano. La bella Verona ha fatto da contorno ad una fantastica proposta."
     },
-    /*
-    {
-      date: "03.02.2015",
-      image: global.images_path+"/"+theme_color+"/port6.jpg",
-      title:"Bridesmaids",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-    },*/
   ];
 };
 module.exports.our_story = our_story;
@@ -45,7 +38,7 @@ module.exports.our_story = our_story;
 var guests = [
   {
     image: {
-      src: global.images_path+"/br1.jpg",
+      src: global.images_path+"/testimoni/daniele.jpg",
       alt: "Kame"
     },
     title: "<span>Testimone Sposo</span> Daniele",
@@ -53,7 +46,7 @@ var guests = [
   },
   {
     image: {
-      src: global.images_path+"/br2.jpg",
+      src: global.images_path+"/testimoni/fabiana.jpg",
       alt: "Query"
     },
     title: "<span>Testimone Sposa</span> Fabiana",
@@ -61,7 +54,7 @@ var guests = [
   },
   {
     image: {
-      src: global.images_path+"/br5.jpg",
+      src: global.images_path+"/testimoni/fede.jpg",
       alt: "Fede"
     },
     title: "<span>Testimone Sposa</span> Federica",
@@ -69,7 +62,7 @@ var guests = [
   },
   {
     image: {
-      src: global.images_path+"/br3.jpg",
+      src: global.images_path+"/testimoni/giovanni.jpg",
       alt: "Giannone"
     },
     title: "<span>Testimone Sposo</span> Giovanni",
@@ -77,7 +70,7 @@ var guests = [
   },
   {
     image: {
-      src: global.images_path+"/br4.jpg",
+      src: global.images_path+"/testimoni/renato.jpg",
       alt: "CoCamion"
     },
     title: "<span>Testimone Sposo</span> Renato",
@@ -85,7 +78,7 @@ var guests = [
   },
   {
     image: {
-      src: global.images_path+"/br6.jpg",
+      src: global.images_path+"/testimoni/sara.jpg",
       alt: "Saruz"
     },
     title: "<span>Testimone Sposa</span> Sara",
@@ -129,52 +122,76 @@ var gallery = function(theme_color) {
   return [
     {
       image: {
-        src: global.images_path+"/"+theme_color+"/port1.jpg",
-        alt: "Gallery 1"
+        src: global.images_path+"/gallery/1_scozia.jpg",
+        alt: "Edimburgo"
       },
-      where: "Hawaii",
-      when: "In late August, on a family vacation to Oahu"
+      where: "Edimburgo",
+      when: "Novembre 2014"
     },
     {
       image: {
-        src: global.images_path+"/"+theme_color+"/port2.jpg",
-        alt: "Gallery 2"
+        src: global.images_path+"/gallery/2_valbondione.jpg",
+        alt: "Valbondione"
       },
-      where: "New Zealand",
-      when: "In Summer 2015"
+      where: "Valbondione",
+      when: "Capodanno 2014"
     },
     {
       image: {
-        src: global.images_path+"/"+theme_color+"/port3.jpg",
-        alt: "Gallery 3"
+        src: global.images_path+"/gallery/3_belfast.jpg",
+        alt: "Belfast"
       },
-      where: "Honeymoon",
-      when: "February 5, 2015 / New-York, USA"
+      where: "Belfast",
+      when: "Estate 2016"
     },
     {
       image: {
-        src: global.images_path+"/"+theme_color+"/port4.jpg",
-        alt: "Gallery 4"
+        src: global.images_path+"/gallery/4_marche.jpg",
+        alt: "Matrimonio Berna"
       },
-      where: "Honeymoon",
-      when: "February 5, 2015 / New-York, USA"
+      where: "Marche",
+      when: "Settembre 2014"
     },
     {
       image: {
-        src: global.images_path+"/"+theme_color+"/port5.jpg",
-        alt: "Gallery 5"
+        src: global.images_path+"/gallery/5_rovereto.jpg",
+        alt: "Mercatini di Natale 2016"
       },
-      where: "Hawaii",
-      when: "In late August, on a family vacation to Oahu"
+      where: "Rovereto",
+      when: "Mercatini di Natale 2016"
     },
     {
       image: {
-        src: global.images_path+"/"+theme_color+"/port6.jpg",
+        src: global.images_path+"/gallery/6_casa.jpg",
         alt: "Gallery 6"
       },
-      where: "New Zealand",
-      when: "In Summer 2015"
+      where: "Casa",
+      when: "San Valentino 2016"
     },
+    {
+    	image: {
+          src: global.images_path+"/gallery/7_edimburgo.jpg",
+          alt: "Gallery 6"
+        },
+        where: "Edimburgo",
+        when: "Novembre 2014"
+    },
+    {
+    	image: {
+	    src: global.images_path+"/gallery/8_torino.jpg",
+	    alt: "Gallery 6"
+	  },
+	  where: "Torino",
+	  when: "Viaggetto 2015"
+	},
+	{
+	    image: {
+	      src: global.images_path+"/gallery/9_taormina.jpg",
+		  alt: "Gallery 6"
+		},
+		where: "Taormina",
+		when: "Estate 2016"
+	},
   ];
 };
 module.exports.gallery = gallery;

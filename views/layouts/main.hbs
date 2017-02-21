@@ -61,10 +61,6 @@
 
         {{!-- {{> hotel}} --}}
 
-        {{#if events}}
-          {{> events}}
-        {{/if}}
-
         {{> rsvp}}
 
         {{#if gallery}}
@@ -72,6 +68,10 @@
         {{/if}}
 
         {{> gift}}
+        
+        {{#if events}}
+          {{> events}}
+        {{/if}}
 
         {{> footer}}
 

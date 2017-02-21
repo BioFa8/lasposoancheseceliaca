@@ -63,7 +63,7 @@ console.log("Norata Francesco isInvitatoValid="+isInvitatoValid);
 function getContext(theme_color) {
   return {
     intl: {locales: 'it-IT'},
-    wedding_date: new Date(2017,5,10), // Num mese -1
+    wedding_date: new Date(2017,5,10,16,0), // Num mese -1
     title: "Fabio & Elena",
     color_theme: theme_color,
     our_story: dati.our_story(theme_color),
@@ -81,24 +81,8 @@ app.get('/', function (req, res) {
     res.render('index', getContext("my-custom-style"));
 });
 
-app.get('/blue', function (req, res) {
-    res.render('index', getContext("blue"));
-});
-
-app.get('/red', function (req, res) {
-  res.render('index', getContext("red"));
-});
-
-app.get('/pink', function (req, res) {
-  res.render('index', getContext("pink"));
-});
-
-app.get('/brown', function (req, res) {
-  res.render('index', getContext("brown"));
-});
-
 app.post('/checkinvitato', function (req, res) {
-	console.log(req.body);
+//	console.log(req.body);
   res.send(checkInviato(req.body.surname, req.body.name));
 });
 
@@ -107,7 +91,7 @@ app.listen(app.get('port'), function() {
 });
 
 function checkInviato(cognome, nome) {
-	console.log(cognome+" "+nome);
+//	console.log(cognome+" "+nome);
     var i, len = global.invitati.length;
 
     for (i = 0; i < len; i++) {

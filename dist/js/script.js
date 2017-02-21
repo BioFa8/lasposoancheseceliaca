@@ -41,21 +41,28 @@
 			
 			$.post( "/checkinvitato", { name: name, surname: surname })
 			  .done(function( data ) {
-			   console.log(data);
-			   var isInvitatoValid = data;
-				console.log(surname +" "+ name+ " isInvitatoValid?"+isInvitatoValid);
-				if (!isInvitatoValid) {
-					$("input#surname_"+type).css({border:"1px solid red"});
-					$("input#name_"+type).css({border:"1px solid red"});
-					$("input#name_"+type).focus();
-					return false;
-				}
+//			   console.log(data);
+			   var isInvitatoValid = (data=="true");
+//				console.log(surname +" "+ name+ " isInvitatoValid?"+isInvitatoValid);
+//				if (!isInvitatoValid) {
+//					$("input#surname_"+type).css({border:"1px solid red"});
+//					$("input#name_"+type).css({border:"1px solid red"});
+//					$("input#name_"+type).focus();
+//					return false;
+//				} 
+				var dataString = '&name=' + name + '&surname=' + surname + '&attending=' + attending + '&email=' + email + "&invitato_valido=" + isInvitatoValid;
+				var form = $(this);
+				sendMail(form, dataString, type);
+				
 			  });	
 			
 			//return false;
 	
-			var dataString = '&name=' + name + '&surname=' + surname + '&attending=' + attending + '&email=' + email;
-			var form = $(this);
+			
+		}
+		
+		function sendMail(form, dataString, type) {
+			
 			var str = form.serialize();
 			$.ajax({
 				method: "POST",
@@ -136,10 +143,11 @@
 
 		/*OWL Carousel in Our Story*/
 		$(".story_wrapper").owlCarousel({
-	 		navigation : true,	responsive: true, responsiveRefreshRate : 200,	slideSpeed : 200,
-	 		paginationSpeed : 200,	rewindSpeed : 500,	items:3,  itemsTablet: [768,1], autoPlay : true,
+			loop:true, navigation : false,	responsive: true, responsiveRefreshRate : 200,	slideSpeed : 200,
+	 		paginationSpeed : 200,	rewindSpeed : 500,	items:2,  itemsTablet: [768,1], autoPlay : true,
 			itemsMobile : [479,1], 	itemsDesktopSmall : [980,1],  itemsDesktop : [1500,2], mouseDrag:false, touchDrag:false
 		});
+		
 
 		/*Gallery Carousel */
 		$(".gallery_wrapper").owlCarousel({
@@ -157,7 +165,7 @@
 		/*The Crew Carousel*/
 		$(".guest_wrapper").owlCarousel({
 	 		navigation : true, responsive: true, responsiveRefreshRate : 200, slideSpeed : 200,	paginationSpeed : 200,
-			rewindSpeed : 500, stopOnHover : false, autoHeight : true, items:4, mouseDrag:false, autoPlay : true, transitionStyle : "fade", touchDrag:false
+			rewindSpeed : 500, stopOnHover : false, autoHeight : true, items:6, mouseDrag:false, autoPlay : true, transitionStyle : "fade", touchDrag:false
 		});
 
 		/*Slider Carousel*/
