@@ -2,7 +2,7 @@ var our_story = function(theme_color) {
   return [
     {
       date: "02.04.2014",
-      image: global.images_path+"/"+theme_color+"/first_day.jpg",
+      image: global.images_path+"/"+theme_color+"/dlbi.jpg",
       title:"Il giorno che ci incontrammo",
       desc: "Non ci sono foto a testimonianza di questo giorno, però ci sono delle persone, fatevelo raccontare da loro. Se volete scriveteci, vi mandiamo un messaggio in privato ^_^"
     },
