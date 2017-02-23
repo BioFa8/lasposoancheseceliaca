@@ -150,7 +150,7 @@ var gallery = function(theme_color) {
         alt: "Matrimonio Berna"
       },
       where: "Marche",
-      when: "Settembre 2014"
+      when: "Settembre 2015"
     },
     {
       image: {
