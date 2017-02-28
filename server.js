@@ -14,7 +14,7 @@ var digest = auth.digest({
 });
 
 var app = express();
-app.use(auth.connect(digest));
+//app.use(auth.connect(digest));
 app.set('port', (process.env.PORT || 3000));
 app.set('default locale', 'it-IT');
 
