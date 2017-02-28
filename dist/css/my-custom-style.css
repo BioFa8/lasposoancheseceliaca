@@ -139,3 +139,13 @@ b, strong {
     width: 100%;
     max-width: none;
 }
+
+.our_story .story_item{
+    width:97%;
+}
+.story_title {
+    margin: 0 -10% 2px 0;
+}
+.story_txt {
+    font: 300 15px/22px Raleway,Roboto Condensed;
+}

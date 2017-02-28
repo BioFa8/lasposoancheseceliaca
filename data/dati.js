@@ -111,7 +111,7 @@ var events = function(theme_color) {
     {
       image: global.images_path+"/san-pietro.jpg",
       youtube: "https://www.youtube.com/embed/T9bUQWhoIxA?rel=0",
-      title:"Piazza San Pietro",
+      title:"San Pietro",
       desc: "Piazza San Pietro è la piazza antistante la basilica di San Pietro. Posta a margine del centro storico di Roma, la piazza fa parte della Città del Vaticano ed è delimitata dal confine con lo Stato italiano; attraverso il rione Borgo che giace a est, i principali accessi sono da via di Porta Angelica o da via della Conciliazione."
     },
   ];
