@@ -17,24 +17,28 @@
                 <div class="paper_title">RSVP entro 16 Aprile</div>
 
                 <!-- Form -->
+                
                 <div id="div_block_1">
-                    <div class="txt_input">
-                        <input type="text" class="form-control" id="name_block_1" placeholder="Nome">
-                    </div>
-                    <div class="txt_input">
-                        <input type="text" class="form-control" id="surname_block_1" placeholder="Cognome">
-                    </div>
-                    <div class="txt_input">
-                        <input type="text" class="form-control" id="email_block_1" placeholder="E-mail">
-                    </div>
-                    <div class="txt_input">
-                        <input type="text" class="form-control" id="attending_block_1" placeholder="# accompagnatori">
-                    </div>
-                    <div class="">
-                        <textarea class="form-control" id="note_block_1" placeholder="Intolleranze o altro"></textarea>
-                    </div>
-                    <input name="" type="submit" value="Invia" class="btn btn-lg submit_block_1">
-
+                	<form id="rsvp">
+                		<fieldset>
+		                    <div class="txt_input">
+		                        <input type="text" class="form-control" id="name_block_1" placeholder="Nome" required>
+		                    </div>
+		                    <div class="txt_input">
+		                        <input type="text" class="form-control" id="surname_block_1" placeholder="Cognome" required>
+		                    </div>
+		                    <div class="txt_input">
+		                        <input type="email" autocomplete="on" class="form-control" id="email_block_1" placeholder="E-mail" required>
+		                    </div>
+		                    <div class="txt_input">
+		                        <input type="text" class="form-control" id="attending_block_1" placeholder="# accompagnatori" required pattern="\d+">
+		                    </div>
+		                    <div class="">
+		                        <textarea class="form-control" id="note_block_1" placeholder="Intolleranze o altro"></textarea>
+		                    </div>
+		                    <input name="" type="submit" value="Invia" class="btn btn-lg submit_block_1">
+	                    </fieldset>
+					</form>
 
                     <!-- Form Additional text -->
                     <p>Siamo felici di sentirvi! Per ogni domanda scriveteci a:

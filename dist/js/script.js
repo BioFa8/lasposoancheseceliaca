@@ -5,9 +5,16 @@
 		"use strict";
 
 		/*RSVP Form*/
-		$(".submit_block_1").click(function() {
+//		$(".submit_block_1").click(function() {
+//			if ($('#rsvp')[0].checkValidity()) {
+//				send_form('block_1');		
+//			}
+//			e.preventDefault();
+//			return false;
+//		});
+		$("#rsvp").submit(function(event) {
 			send_form('block_1');
-			return false;
+			event.preventDefault();
 		});
 
 		function send_form(type){
