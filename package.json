@@ -11,8 +11,7 @@
     "fs": "^0.0.1-security",
     "handlebars-intl": "^1.1.2",
     "http-auth": "^3.1.1",
-    "path": "^0.12.7",
-    "throng": "^4.0.0"
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {
