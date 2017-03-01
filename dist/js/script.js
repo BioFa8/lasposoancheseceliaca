@@ -153,7 +153,7 @@
 		$(".gallery_wrapper").owlCarousel({
 	 		navigation : true,	responsive: true, responsiveRefreshRate : 200,	slideSpeed : 200,
 	 		paginationSpeed : 200,	rewindSpeed : 500,	items:3,  itemsTablet: [768,2], autoPlay : true,
-			itemsMobile : [479,1], mouseDrag:false, touchDrag:false
+			itemsMobile : [479,1], mouseDrag:false, touchDrag:false, stopOnHover : true
 		});
 
 		/*Registry Carousel */
@@ -165,19 +165,19 @@
 		/*The Crew Carousel*/
 		$(".guest_wrapper").owlCarousel({
 	 		navigation : true, responsive: true, responsiveRefreshRate : 200, slideSpeed : 200,	paginationSpeed : 200,
-			rewindSpeed : 500, stopOnHover : false, autoHeight : true, items:6, mouseDrag:false, autoPlay : true, transitionStyle : "fade", touchDrag:false
+			rewindSpeed : 500, stopOnHover : true, autoHeight : true, items:6, mouseDrag:false, autoPlay : true, transitionStyle : "fade", touchDrag:false
 		});
 
 		/*Slider Carousel*/
 		$(".slider").owlCarousel({
 	 		navigation : true, responsive: true, responsiveRefreshRate : 200, slideSpeed : 200,	paginationSpeed : 200,
-			rewindSpeed : 500, stopOnHover : false, autoHeight : true, singleItem:true, mouseDrag:false, autoPlay : true, transitionStyle : "fade", touchDrag:false
+			rewindSpeed : 500, stopOnHover : true, autoHeight : true, singleItem:true, mouseDrag:false, autoPlay : true, transitionStyle : "fade", touchDrag:false
 		});
 
 		/*Blog Inside*/
 		$(".blog_inside_wrapper").owlCarousel({
 	 		navigation : true, responsive: true, responsiveRefreshRate : 200, slideSpeed : 200,	paginationSpeed : 200,
-			rewindSpeed : 500, stopOnHover : false, autoHeight : true, singleItem:true, mouseDrag:false, autoPlay : true, transitionStyle : "fade", touchDrag:false
+			rewindSpeed : 500, stopOnHover : true, autoHeight : true, singleItem:true, mouseDrag:false, autoPlay : true, transitionStyle : "fade", touchDrag:false
 		});
 
 		/* Top Menu Click to Section */

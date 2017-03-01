@@ -114,6 +114,18 @@ var events = function(theme_color) {
       title:"San Pietro",
       desc: "Piazza San Pietro è la piazza antistante la basilica di San Pietro. Posta a margine del centro storico di Roma, la piazza fa parte della Città del Vaticano ed è delimitata dal confine con lo Stato italiano; attraverso il rione Borgo che giace a est, i principali accessi sono da via di Porta Angelica o da via della Conciliazione."
     },
+    {
+        image: global.images_path+"/pantheon.jpg",
+        youtube: "https://www.youtube.com/embed/7tbAPsEsYTs?rel=0",
+        title:"Pantheon",
+        desc: "Il Pantheon è un edificio della Roma antica situato nel rione Pigna nel centro storico, costruito come tempio dedicato a tutte le divinità passate, presenti e future. Fu fondato nel 27 a.C. da Marco Vipsanio Agrippa, genero di Augusto..."
+	},
+	{
+		image: global.images_path+"/piazzanavona.jpg",
+		youtube: "https://www.youtube.com/embed/zA-xaz56tGo?rel=0",
+		title:"Piazza Navona",
+		desc: "Piazza Navona è una delle più celebri piazze di Roma, fatta costruire dalla famiglia Pamphili. La sua forma è quella di un antico stadio: venne costruita in stile monumentale per volere di papa Innocenzo X (Giovanni Battista Pamphilj)..."
+	}
   ];
 };
 module.exports.events = events;
