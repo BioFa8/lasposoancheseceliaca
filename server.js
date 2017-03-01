@@ -19,16 +19,16 @@ function start() {
 	var bodyParser = require('body-parser');
 	
 	//Authentication module.
-	var auth = require('http-auth');
-	var digest = auth.digest({
-	    realm: "Private area",
-	    file: __dirname + "/.htpasswd"
-	});
+//	var auth = require('http-auth');
+//	var digest = auth.digest({
+//	    realm: "Private area",
+//	    file: __dirname + "/.htpasswd"
+//	});
 	
 	
 	
 	var app = express();
-	app.use(auth.connect(digest));
+//	app.use(auth.connect(digest));
 	app.set('port', PORT);
 	app.set('default locale', 'it-IT');
 	
