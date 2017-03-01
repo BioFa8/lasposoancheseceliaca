@@ -5,13 +5,6 @@
 		"use strict";
 
 		/*RSVP Form*/
-//		$(".submit_block_1").click(function() {
-//			if ($('#rsvp')[0].checkValidity()) {
-//				send_form('block_1');		
-//			}
-//			e.preventDefault();
-//			return false;
-//		});
 		$("#rsvp").submit(function(event) {
 			send_form('block_1');
 			event.preventDefault();
@@ -151,7 +144,7 @@
 		/*OWL Carousel in Our Story*/
 		$(".story_wrapper").owlCarousel({
 			loop:true, navigation : false,	responsive: true, responsiveRefreshRate : 200,	slideSpeed : 200,
-	 		paginationSpeed : 200,	rewindSpeed : 500,	items:2,  itemsTablet: [1024,1], autoPlay : false,
+	 		paginationSpeed : 200,	rewindSpeed : 500,	items:2,  itemsTablet: [1024,1], autoPlay : true,
 			itemsMobile : [479,1], 	itemsDesktopSmall : [980,1],  itemsDesktop : [1500,2], mouseDrag:false, touchDrag:false
 		});
 		
