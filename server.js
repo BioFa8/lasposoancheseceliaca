@@ -19,7 +19,7 @@ var digest = auth.digest({
 
 
 var app = express();
-//app.use(auth.connect(digest));
+app.use(auth.connect(digest));
 app.set('port', PORT);
 app.set('default locale', 'it-IT');
 
