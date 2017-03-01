@@ -33,11 +33,12 @@
 			}
 			
 			var attending = $("input#attending_"+type).val();
-			if (attending == "") {
-				$("input#attending_"+type).css({border:"1px solid red"});
-				$("input#attending_"+type).focus();
-				return false;
-			}
+			if (attending == "") attending=0;
+//			{
+//				$("input#attending_"+type).css({border:"1px solid red"});
+//				$("input#attending_"+type).focus();
+//				return false;
+//			}
 			
 			$.post( "/checkinvitato", { name: name, surname: surname })
 			  .done(function( data ) {
