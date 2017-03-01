@@ -144,9 +144,9 @@
 
 		/*OWL Carousel in Our Story*/
 		$(".story_wrapper").owlCarousel({
-			loop:true, navigation : false,	responsive: true, responsiveRefreshRate : 200,	slideSpeed : 200,
-	 		paginationSpeed : 200,	rewindSpeed : 500,	items:2,  itemsTablet: [1024,1], autoPlay : true,
-			itemsMobile : [479,1], 	itemsDesktopSmall : [980,1],  itemsDesktop : [1500,2], mouseDrag:false, touchDrag:false
+			loop:true, navigation : true,	responsive: true, responsiveRefreshRate : 200,	slideSpeed : 200,
+	 		paginationSpeed : 200,	rewindSpeed : 500,	items:2,  itemsTablet: [1024,1], autoPlay : false,
+			itemsMobile : [479,1], 	itemsDesktopSmall : [980,1],  itemsDesktop : [1500,2], mouseDrag:false, touchDrag:true
 		});
 		
 
