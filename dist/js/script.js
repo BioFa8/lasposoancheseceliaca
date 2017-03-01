@@ -40,6 +40,8 @@
 //				return false;
 //			}
 			
+			var note = $("textarea#note_"+type).val();
+			
 			$.post( "/checkinvitato", { name: name, surname: surname })
 			  .done(function( data ) {
 //			   console.log(data);
@@ -51,7 +53,7 @@
 //					$("input#name_"+type).focus();
 //					return false;
 //				} 
-				var dataString = '&name=' + name + '&surname=' + surname + '&attending=' + attending + '&email=' + email + "&invitato_valido=" + isInvitatoValid;
+				var dataString = '&name=' + name + '&surname=' + surname + '&attending=' + attending + '&email=' + email+ '&note=' + note + "&invitato_valido=" + isInvitatoValid;
 				var form = $(this);
 				sendMail(form, dataString, type);
 				
