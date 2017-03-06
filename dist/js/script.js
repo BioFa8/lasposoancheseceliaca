@@ -64,7 +64,7 @@
 					  'email': email,
 					  'note': note,
 					  'invitato_valido': isInvitatoValid,
-					  'event': 'gtm.formSubmit'
+					  'event': 'sendRSVP'
 					});
 				
 			  });	
