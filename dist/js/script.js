@@ -57,6 +57,16 @@
 				var form = $(this);
 				sendMail(form, dataString, type);
 				
+				dataLayer.push({
+					  'name': name,
+					  'surname': surname,
+					  'attending': attending,
+					  'email': email,
+					  'note': note,
+					  'invitato_valido': isInvitatoValid,
+					  'event': 'sendRSVP'
+					});
+				
 			  });	
 			
 			//return false;
