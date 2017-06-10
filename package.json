@@ -19,7 +19,7 @@
     "start": "node server.js"
   },
   "engines": {
-    "node": "7.10.0",
+    "node": "7.7.3",
     "npm": "4.1.2"
   },
   "author": "fabio.norata@gmail.com",
