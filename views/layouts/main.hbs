@@ -130,10 +130,10 @@
           /*CountDown*/
           $('.married_coundown').countdown({until: new Date(
           	{{formatDate wedding_date year="numeric"}},
-          	{{formatDate wedding_date month="numeric"}}-1,
+          	{{formatDate wedding_date month="numeric"}},
           	{{formatDate wedding_date day="numeric"}},
-          	{{formatDate wedding_date hour="2-digit"}},
-          	{{formatDate wedding_date minute="2-digit"}}
+          	{{formatDate wedding_date hour="numeric"}},
+          	{{formatDate wedding_date minute="numeric"}}
           	)});
         </script>
 
