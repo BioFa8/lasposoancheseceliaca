@@ -77,7 +77,7 @@ function start() {
 	function getContext(theme_color) {
 	  return {
 	    intl: {locales: 'it-IT'},
-	    wedding_date: new Date(2017,5,10,16,0), // Num mese -1
+	    wedding_date: new Date(2017,5,10,16,0),  // Num mese -1
 	    title: "Fabio & Elena",
 	    color_theme: theme_color,
 	    our_story: dati.our_story(theme_color),
