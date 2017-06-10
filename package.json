@@ -19,8 +19,8 @@
     "start": "node server.js"
   },
   "engines": {
-    "node": "6.2.2",
-    "npm": "4.0.2"
+    "node": "7.7.3",
+    "npm": "4.1.2"
   },
   "author": "fabio.norata@gmail.com",
   "license": "ISC"
