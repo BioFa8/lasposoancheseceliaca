@@ -128,7 +128,13 @@
         <script src="{{js_path}}/script.js"></script>
         <script type="">
           /*CountDown*/
-          $('.married_coundown').countdown({until: new Date({{formatDate wedding_date year="numeric"}},{{formatDate wedding_date month="numeric"}}-1,{{formatDate wedding_date day="numeric"}})});
+          $('.married_coundown').countdown({until: new Date(
+          	{{formatDate wedding_date year="numeric"}},
+          	{{formatDate wedding_date month="numeric"}}-1,
+          	{{formatDate wedding_date day="numeric"}},
+          	{{formatDate wedding_date hour="numeric"}},
+          	{{formatDate wedding_date minute="numeric"}}
+          	)});
         </script>
 
     </div>
