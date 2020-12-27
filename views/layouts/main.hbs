@@ -2,7 +2,7 @@
 <html lang="{{@intl.locales}}">
 
 <head>
-	
+
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +14,9 @@
 	<meta property="og:image"		content="http://www.lasposoancheseceliaca.com/dist/images/lasposoancheseceliaca.jpg" />
 	<meta property="og:locale"		content="it_IT" />
 	<link rel="canonical" href="http://www.lasposoancheseceliaca.com" />
-	
+
     <title>{{title}}</title>
-	
+
 	<script>
 	  dataLayer = [];
 	</script>
@@ -79,24 +79,28 @@
         {{/if}}
 
         {{> when_and_where}}
-        
+
         {{> location}}
-        
-        {{> hotel_reservation}}
+
+        {{!-- {{> hotel_reservation}} --}}
 
         {{!-- {{> hotel}} --}}
 
-        {{> rsvp}}
+        {{!-- {{> rsvp}} --}}
 
         {{#if gallery}}
           {{> gallery}}
         {{/if}}
 
-        {{> gift}}
-        
+        {{!-- {{> gift}} --}}
+
         {{#if events}}
           {{> events}}
         {{/if}}
+
+				{{#if matrimonio_gallery}}
+					  {{> gallery_matrimonio}}
+				{{/if}}
 
         {{> footer}}
 
@@ -128,13 +132,14 @@
         <script src="{{js_path}}/script.js"></script>
         <script type="text/javascript">
           /*CountDown*/
-          $('.married_coundown').countdown({until: new Date(
+          $('.married_coundown').countdown({since: new Date(
           	{{formatDate wedding_date year="numeric"}},
           	{{formatDate wedding_date month="numeric"}}-1,
           	{{formatDate wedding_date day="numeric"}},
           	16,
           	{{formatDate wedding_date minute="numeric"}}
-          	)});
+					),
+				format: 'YODHMS'});
         </script>
 
     </div>

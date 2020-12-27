@@ -11,7 +11,7 @@
 		});
 
 		function send_form(type){
-	
+
 			var name = $("input#name_"+type).val();
 			if (name == "") {
 				$("input#name_"+type).css({border:"1px solid red"});
@@ -24,14 +24,14 @@
 				$("input#email_"+type).focus();
 				return false;
 			}
-			
+
 			var surname = $("input#surname_"+type).val();
 			if (surname == "") {
 				$("input#surname_"+type).css({border:"1px solid red"});
 				$("input#surname_"+type).focus();
 				return false;
 			}
-			
+
 			var attending = $("input#attending_"+type).val();
 			if (attending == "") attending=0;
 //			{
@@ -39,9 +39,9 @@
 //				$("input#attending_"+type).focus();
 //				return false;
 //			}
-			
+
 			var note = $("textarea#note_"+type).val();
-			
+
 			$.post( "/checkinvitato", { name: name, surname: surname })
 			  .done(function( data ) {
 //			   console.log(data);
@@ -52,11 +52,11 @@
 //					$("input#name_"+type).css({border:"1px solid red"});
 //					$("input#name_"+type).focus();
 //					return false;
-//				} 
+//				}
 				var dataString = '&name=' + name + '&surname=' + surname + '&attending=' + attending + '&email=' + email+ '&note=' + note + "&invitato_valido=" + isInvitatoValid;
 				var form = $(this);
 				sendMail(form, dataString, type);
-				
+
 //				dataLayer.push({
 //					  'name': name,
 //					  'surname': surname,
@@ -66,16 +66,16 @@
 //					  'invitato_valido': isInvitatoValid,
 //					  'event': 'sendRSVP'
 //					});
-				
-			  });	
-			
+
+			  });
+
 			//return false;
-	
-			
+
+
 		}
-		
+
 		function sendMail(form, dataString, type) {
-			
+
 			var str = form.serialize();
 			$.ajax({
 				method: "POST",
@@ -160,13 +160,19 @@
 	 		paginationSpeed : 200,	rewindSpeed : 500,	items:2,  itemsTablet: [1024,1], autoPlay : false,
 			itemsMobile : [479,1], 	itemsDesktopSmall : [980,1],  itemsDesktop : [1500,2], mouseDrag:false, touchDrag:true
 		});
-		
+
 
 		/*Gallery Carousel */
 		$(".gallery_wrapper").owlCarousel({
 	 		navigation : true,	responsive: true, responsiveRefreshRate : 200,	slideSpeed : 200,
 	 		paginationSpeed : 200,	rewindSpeed : 500,	items:3,  itemsTablet: [768,2], autoPlay : true,
-			itemsMobile : [479,1], mouseDrag:false, touchDrag:false, stopOnHover : true
+			itemsMobile : [479,1], mouseDrag:false, touchDrag:false, stopOnHover : true, lazyLoad:true
+		});
+
+		$(".gallery_matrimonio_wrapper").owlCarousel({
+			navigation : true,	responsive: true, responsiveRefreshRate : 200,	slideSpeed : 200,
+			paginationSpeed : 200,	rewindSpeed : 500,	items:5,  itemsTablet: [768,2], autoPlay : true,
+			itemsMobile : [479,1], mouseDrag:false, touchDrag:false, stopOnHover : true, lazyLoad:true, pagination:false
 		});
 
 		/*Registry Carousel */
@@ -203,7 +209,7 @@
 			}, 1000);
 
 			e.preventDefault();
-			
+
 			$('.main_menu_btn').click();
 		});
 

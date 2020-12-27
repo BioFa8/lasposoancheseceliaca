@@ -5,23 +5,24 @@
   "main": "server.js",
   "private": true,
   "dependencies": {
-    "body-parser": "^1.16.0",
-    "express": "^4.14.0",
-    "express-handlebars": "^3.0.0",
-    "fs": "^0.0.1-security",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.0",
+    "express-handlebars": "^5.2.0",
+    "got": "^11.8.1",
     "handlebars-intl": "^1.1.2",
-    "http-auth": "^3.1.1",
+    "http-auth": "^4.1.2",
+    "node-gallery": "^1.1.0",
     "path": "^0.12.7",
-    "throng": "^4.0.0"
+    "throng": "^5.0.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "engines": {
-    "node": "7.7.3",
-    "npm": "4.1.2"
+    "node": "v15.5.0",
+    "npm": "7.3.0"
   },
   "author": "fabio.norata@gmail.com",
   "license": "ISC"
