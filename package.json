@@ -8,7 +8,7 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.16.0",
-    "express-handlebars": "^5.2.0",
+    "express-handlebars": "^5.3.1",
     "got": "^11.8.5",
     "handlebars-intl": "^1.1.2",
     "http-auth": "^4.1.2",
