@@ -220,7 +220,7 @@
 		});
 
 		/* Refresh ScrollR */
-		s.refresh($(".guest_wrapper, .our_story"));
+		$.refresh($(".guest_wrapper, .our_story"));
 
 	});
 })(jQuery);
