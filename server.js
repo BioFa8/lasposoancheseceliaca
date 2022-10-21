@@ -101,7 +101,7 @@ function start() {
 	console.log(__dirname);
 	app.set('views', __dirname + '/views');
 	app.set('view engine', '.hbs');
-	app.use(express.static('./'));
+	//app.use(express.static('./'));
 	app.use("/dist", express.static(path.join(__dirname, 'dist')));
 
 	app.use('/gallery', require('node-gallery')({

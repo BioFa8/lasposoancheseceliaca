@@ -13,3 +13,5 @@
 node_modules/
 .project
 ._*
+package-lock.json
+.dockerignore
